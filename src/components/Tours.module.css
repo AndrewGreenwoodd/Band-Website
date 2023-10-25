@@ -1,0 +1,14 @@
+.tourList{
+    list-style: none;
+    padding:0;
+}
+.tourHeader{
+    margin-top:5vh;
+    margin-bottom:0;
+    text-align: center;
+}
+.tourWrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}

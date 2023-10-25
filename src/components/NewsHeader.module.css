@@ -1,0 +1,17 @@
+.newsHeader{
+    text-align: center;
+    margin-top: 5vh;
+}
+.newsHeaderDescription{
+    text-align: center;
+}
+.newsHeaderImageContainer{
+    display:flex;
+    justify-content: center;
+}
+.newsHeaderImage{
+    min-height:300px;
+    min-width:400px;
+    max-width:50vw;
+    max-height: 65vh;
+}

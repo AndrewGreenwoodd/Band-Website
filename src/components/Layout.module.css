@@ -1,0 +1,8 @@
+.main {
+    margin: 5rem auto;
+    width: 90%;
+    max-width: 75rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+  }

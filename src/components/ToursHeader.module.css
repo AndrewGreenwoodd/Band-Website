@@ -1,0 +1,10 @@
+.tourList{
+    list-style: none;
+    padding:0;
+}
+.tourWrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
