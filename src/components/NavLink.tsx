@@ -7,19 +7,25 @@ interface NavLinkProps {
   exact?: boolean;
   children: React.ReactNode;
   className?: string;
+  onClick?: ()=> void;
 }
 
-export function NavLink({ href, exact = false, children, className = '', ...props }: NavLinkProps) {
+export function NavLink({ href, exact = false, children, className = '',onClick, ...props }: NavLinkProps) {
   const { pathname } = useRouter();
   const isActive = exact ? pathname === href : pathname.startsWith(href);
 
   if (isActive) {
     className += ` ${styles.active}`;
   }
+  const handleClick = () => {
+    if (onClick) {
+      onClick(); 
+    }
+  };
 
   return (
     <Link href={href}>
-      <div className={className} {...props}>
+      <div className={className} onClick={handleClick}  {...props}>
         {children}
       </div>
     </Link>

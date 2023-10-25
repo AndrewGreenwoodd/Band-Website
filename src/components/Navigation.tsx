@@ -20,16 +20,16 @@ const Navigation: React.FC = () => {
                 <div className={`${styles['nav-menu']} ${isOpen ? styles.open : ''}`}>
                     <ul className={styles.navList}>
                         <li className={styles['nav-item']}>
-                            <NavLink href="/" exact className={styles['nav-link']}>{selectedLanguage ==='en' ? 'News' : 'Новини'}</NavLink>
+                            <NavLink href="/" exact className={styles['nav-link']} onClick={toggleNavMenu}>{selectedLanguage === 'en' ? 'News' : 'Новини'}</NavLink>
                         </li>
                         <li className={styles['nav-item']}>
-                            <NavLink href="/tours" exact className="nav-item nav-link">{selectedLanguage ==='en' ? 'Tour Dates' : 'Тур'}</NavLink>
+                            <NavLink href="/tours" exact className="nav-item nav-link" onClick={toggleNavMenu}>{selectedLanguage === 'en' ? 'Tour Dates' : 'Тур'}</NavLink>
                         </li>
                         <li className={styles['nav-item']}>
-                            <NavLink href="/music" exact className="nav-item nav-link">{selectedLanguage ==='en' ? 'Music' : 'Музика'}</NavLink>
+                            <NavLink href="/music" exact className="nav-item nav-link" onClick={toggleNavMenu}>{selectedLanguage === 'en' ? 'Music' : 'Музика'}</NavLink>
                         </li>
                         <li className={styles['nav-item']}>
-                            <NavLink href="/contact" exact className="nav-item nav-link">{selectedLanguage ==='en' ? 'Contact' : 'Контакт'}</NavLink>
+                            <NavLink href="/contact" exact className="nav-item nav-link" onClick={toggleNavMenu}>{selectedLanguage === 'en' ? 'Contact' : 'Контакт'}</NavLink>
                         </li>
 
 
