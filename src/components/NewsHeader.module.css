@@ -11,7 +11,7 @@
 }
 .newsHeaderImage{
     min-height:300px;
-    min-width:400px;
+    min-width:250px;
     max-width:50vw;
     max-height: 65vh;
 }
