@@ -10,7 +10,6 @@ const Navigation: React.FC = () => {
     const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         changeLanguage(e.target.value);
     };
-    console.log(selectedLanguage)
     const toggleNavMenu = () => {
         openMenu(!isOpen);
     }
